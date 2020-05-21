@@ -6,6 +6,7 @@
  * Time: 5:06 PM
  */
 define('JS_CSS_VERSION','?v=0.0.28');
+/**RAJAN*/
 
 /*$config['JS_VERSION'] = '?v='.time();
 $config['CSS_VERSION'] = '?v='.time();*/
