@@ -2,6 +2,7 @@
 class Ajax_activate_account extends CI_Controller {
 	public function __construct()
     {
+		/**change**///
 		parent::__construct();
 		$this->load->model('admin/admin_model');
 		$this->load->model('database_model');
