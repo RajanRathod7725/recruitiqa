@@ -1,0 +1,368 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+.toggler-ico {
+    border: none;
+    background: none;
+    padding: 0;
+    width: 15px;
+
+    position: absolute;
+    right: 25px;
+    top: 32px;
+}
+.card.card-price.active{
+    background-color: #a6ebff5e;
+}
+
+/*recruiter list capsule tab */
+.tab-btn{
+    text-decoration:none;
+    color:#333333;
+    font-size:16px;
+    font-weight:bold;
+    padding:0 20px;
+    line-height:32px;
+    height: auto;
+    display:inline-block;
+    text-align:center;
+    background-color:#fff;
+    border: 1px solid #7367f0;
+}
+
+.tab-btn.active, .tab-btn:hover{
+    background-color: #7367f0;
+    color: #fff;
+}
+
+.tab-btn.pill{
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+
+.tab-btn-group > .tab-btn.pill:not(:first-child):not(:last-child){
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.tab-btn-group > .tab-btn.pill:first-child{
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.tab-btn-group > .tab-btn.pill:last-child{
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.tab-btn-group .tab-btn + .tab-btn{
+    border-left: 1px solid #7367f0;
+    margin-left:-4px;
+}
+/*recruiter list capsule tab end*/
+
+/*employer candidate list*/
+.task-board {
+    /*background: #2c7cbc;*/
+    display: inline-block;
+    /*padding: 12px;
+    border-radius: 3px;*/
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    min-height: 500px;
+}
+
+.status-card {
+    width: 280px;
+    margin-right: 8px;
+    background: #e2e4e6;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0.9em;
+}
+
+.status-card:last-child {
+    margin-right: 0px;
+}
+
+.card-header {
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: block;
+    font-weight: bold;
+}
+
+.card-header-text {
+    display: block;
+}
+.card-data ul{
+    overflow-y: auto;
+    max-height: 500px;
+    /*position: relative;*/
+}
+.status-card ul{
+    overflow-y: auto;
+    max-height: 500px;
+    /*position: relative;*/
+}
+.status-card .todo-header .card-header-text{width: 100%}
+
+ul.sortable {
+    padding-bottom: 10px;
+}
+
+ul.sortable li:last-child {
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.text-row {
+    padding: 10px 10px;
+    margin: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 0.8em;
+    white-space: normal;
+    line-height: 20px;
+}
+
+.ui-sortable-placeholder {
+    visibility: inherit !important;
+    background: transparent;
+    border: #666 2px dashed;
+}
+/*employer candidate list end*/
+.social-media a i{padding-right: 4px;}
+.c-btn{padding-right: 10px;padding-left: 10px; border-radius: 2px; text-align: center;}
+.card-header .custom-control-label::before, .card-header .custom-control-label::after{top: 0.30rem;}
+
+
+/* Rating Star Widgets Style */
+.rating-stars{
+    padding-bottom: 5px;
+}
+.rating-stars ul {
+    list-style-type:none;
+    padding:0;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+    display:inline-block;
+
+}
+
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+    font-size:1rem; /* Change the size of the stars */
+    color:#ccc; /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+    color:#FFCC36;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+    color:#FF912C;
+}
+
+
+#email-container .ql-editor {
+    height: 150px; }
+
+/* custom Pagination*/
+.pagination .page-item a {
+    border: none;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #f0f0f0;
+    margin-left: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.page-item a {
+    position: relative;
+    display: block;
+    padding: 0.65rem 0.911rem;
+}
+.page-item:not(.active) a {
+    line-height: 1.3;
+}
+.page-item:first-child a {
+    margin-left: 0;
+    border-top-left-radius: 1.428rem;
+    border-bottom-left-radius: 1.428rem;
+}
+.page-item:last-child a {
+    margin-right: 0;
+    border-top-right-radius: 1.428rem;
+    border-bottom-right-radius: 1.428rem;
+}
+/* custom Pagination end*/
+
+/*User Profile*/
+.users-list-wrapper .actions-dropodown {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 0.5rem; }
+
+.users-list-wrapper a,
+.users-list-wrapper span {
+    color: inherit; }
+.users-list-wrapper a i,
+.users-list-wrapper span i {
+    cursor: pointer;
+    font-size: 1.2rem; }
+.users-list-wrapper a i.users-delete-icon,
+.users-list-wrapper span i.users-delete-icon {
+    font-size: 1.2rem; }
+.users-list-wrapper a i.users-delete-icon:hover,
+.users-list-wrapper span i.users-delete-icon:hover {
+    color: #ea5455; }
+.users-list-wrapper a i.users-edit-icon:hover,
+.users-list-wrapper span i.users-edit-icon:hover {
+    color: #7367f0; }
+
+.users-list-wrapper .badge {
+    text-transform: uppercase; }
+
+.users-list-wrapper .ag-icon-checkbox-unchecked {
+    color: #b8c2cc !important;
+    font-size: 22px; }
+
+.users-list-wrapper .ag-icon-checkbox-checked,
+.users-list-wrapper .ag-icon-checkbox-indeterminate {
+    font-size: 22px; }
+
+.page-users-view .users-view-image {
+    width: 150px; }
+
+.page-users-view table td {
+    padding-bottom: .8rem;
+    min-width: 140px;
+}
+
+.page-users-view .users-view-permission table td,
+.page-users-view .users-view-permission table th {
+    padding-bottom: 0; }
+
+.page-users-edit .users-avatar-shadow {
+    box-shadow: 2px 4px 14px 0 rgba(34, 41, 47, 0.4); }
+/*User Profile end*/
+
+/*Modal right*/
+/*.modal.right.fade .modal-dialog {
+    right: -290px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+    right: 0;
+}*/
+
+#candidateDetailModal .modal-dialog-slideout {min-height: 100%; margin: 0 0 0 auto;background: #fff; border-radius: 0.6rem;}
+#candidateDetailModal .modal-content{box-shadow:0 0 0 0 rgba(0, 0, 0, 0.1);}
+#candidateDetailModal .modal.fade .modal-dialog.modal-dialog-slideout {-webkit-transform: translate(100%,0)scale(1);transform: translate(100%,0)scale(1);}
+#candidateDetailModal .modal.fade.show .modal-dialog.modal-dialog-slideout {-webkit-transform: translate(0,0);transform: translate(0,0);display: flex;align-items: stretch;-webkit-box-align: stretch;height: 100%;}
+#candidateDetailModal .modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body{overflow-y: auto;overflow-x: hidden;}
+#candidateDetailModal .modal-dialog-slideout .modal-content{border: 0; height: auto;}
+#candidateDetailModal .modal-dialog-slideout .modal-header, .modal-dialog-slideout .modal-footer {height: 69px; display: block;}
+#candidateDetailModal .modal-dialog-slideout .modal-header h5 {float:left;}
+
+/*Modal right End*/
+#candidateDetailModal .tab-pane{border: 1px solid #7367f0;}
+.no-notes{text-align: center;}
+.not-li{padding-top:10px;padding-bottom: 10px;border-bottom: 1px solid #7367f0; }
+.not-ul li:last-child{border-bottom: 0px; }
+
+.open-add-frm, .open-add-frm-task{border: 1px solid #7f8386; border-radius: 0.4285rem;}
+.open-add-frm:hover .open-add-frm-task:hover{border: 1px solid; border-radius: 0.4285rem;}
+.list-input, .list-add-control, .list-input-task, .list-add-control-task{display: none}
+.cancel_list, .cancel_list_task{vertical-align: middle; color: #ff4c4c;}
+.status-card{ height: auto; margin-bottom: 2rem;}
+.context-menu-list{min-width: 6em !important;}
+.context-menu-item{padding: 0.2rem 1rem !important;}
+.remove-all-styles ul{ list-style: disc; margin: 0px; padding-left: 40px; }
+.remove-all-styles { max-height: 200px;overflow-y: auto; margin-top: 15px;margin-bottom: 15px; }
+.remove-all-styles blockquote{ display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 40px; margin-inline-end: 40px;}
+hr{    margin-top: 1rem; margin-bottom: 1rem; border: 0; border-top: 1px solid rgba(34, 41, 47, 0.1);    box-sizing: content-box; height: 0; overflow: visible;}
+.add_profile_size{margin-left: 5px;}
+.candidate-info{color: #2c2c2c}
+.candidate-info:hover{color: #7367f0}
+.card .card-header{padding: 1.5rem 0.7rem 0 !important}
+.card-header .custom-control-label::before, .card-header .custom-control-label::after{ top: -0.3rem; }
+.ui-sortable-handle .social-media a i{margin-top: 0.3rem !important; margin-bottom:0.5rem !important}
+#candidateDetailModal{padding-right: 0px!important; }
+#candidateDetailModal .modal-dialog-scrollable{border-top-right-radius: 0px!important;border-bottom-right-radius: 0px!important;}
+.note-popover .popover-content, .note-toolbar{background: #e2e4e6 !important}
+.btn-sm, .btn-group-sm > .btn{font-size: 1rem!important;padding: 0.3rem 1rem!important;}
+.emp_job_st_div{width: 20rem;margin-left: 2rem;}
+.emp_job_st_div label{display: inline-block;margin-right: 5px;width:8rem;}
+.emp_job_st_div .job_status_select{width: 8.714rem; height: 3rem; border-radius: 1.428rem;}
+.badge.badge-notinterested { background-color: #ea9090; }
+.badge.badge-interested { background-color: #8dc79f; }
+.text-notinterested{color:#ea9090;}
+.text-interested{color:#8dc79f;}
+.bg-notinterested { background-color: #ea9090 !important; }
+.bg-interested { background-color: #8dc79f !important; }
+.bg-contact-mail{background-color: #c742b9 !important; }
+.bg-followup-mail{background-color: #c7bf00 !important; }
+.bg-invite-mail{background-color: #00c5c7 !important; }
+.user-chats{overflow-y: auto;}
+.chat-users-list-wrapper.media-list li.disable{background: #dfdbe5;}
+.span-msg{ display: inherit; line-height: 0.7rem; }
+.span-msg-time{ font-size: 0.7rem; font-style: italic; line-height: 0.7rem;}
+.user-chat-info .badge.badge-warning{display: inline-block; float: right; margin-right: 0.5rem; }
+.user-chat-info .badge.badge-warning, .user-chat-info .badge.badge-danger{display: inline-block; float: right; margin-right: 0.5rem; }
+.emoji-picker-icon{cursor: pointer !important; position: relative !important; right: 10px!important; top: 5px!important; font-size: 20px!important; opacity: 0.7!important; z-index: 100!important; transition: none!important; color: #4839eb!important; padding: 5px;}
+.chat-users-list-wrapper{overflow-y: auto}
+.emoji-menu{bottom: 0!important;}
+.emoji-wysiwyg-editor{padding: 0.7rem 0.7rem!important;}
+/*.emojiPicker{top: -92px!important; left: 1122.12px!important;}*/
+body::-webkit-scrollbar,.user-chats::-webkit-scrollbar,.modal-body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track,.user-chats::-webkit-scrollbar-track,.modal-body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb,.user-chats::-webkit-scrollbar-thumb,.modal-body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+

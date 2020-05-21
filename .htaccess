@@ -1,0 +1,16 @@
+RewriteEngine on
+RewriteBase /other_projects/jobboard/
+#RewriteBase /jobboard/
+
+RewriteCond $1 !^(index\.php|uploads|images|js|themes|application/language|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /other_projects/jobboard/index.php/$1 [L,QSA]
+#RewriteRule ^(.*)$ /jobboard/index.php/$1 [L,QSA]
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|font.css|css)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
+
