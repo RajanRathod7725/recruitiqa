@@ -3,7 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*Whole system time zone*/
 date_default_timezone_set('US/Eastern');
-//**TIME ZONE**///
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
