@@ -5,7 +5,7 @@
  * Date: 2/12/16
  * Time: 5:06 PM
  */
-define('JS_CSS_VERSION','?v=0.0.27');
+define('JS_CSS_VERSION','?v=0.0.28');
 
 /*$config['JS_VERSION'] = '?v='.time();
 $config['CSS_VERSION'] = '?v='.time();*/
